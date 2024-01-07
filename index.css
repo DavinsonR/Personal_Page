@@ -50,7 +50,7 @@ body {
 
 .color-acento{
     color:rgba(0,0,300);
-    font-size:0.7em;
+    font-size:5vh;
 }
 
 header{
@@ -156,8 +156,8 @@ header a:hover{
 .carta:nth-child(2){
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.6),
-        rgba(0,0,0,0.6)
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
     )
     ,url('img/laptop.png');
 
