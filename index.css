@@ -50,7 +50,7 @@ body {
 
 .color-acento{
     color:rgba(0,0,300);
-    font-size:5vh;
+    font-size:5vw;
 }
 
 header{
@@ -181,4 +181,114 @@ header a:hover{
 #contact{
     margin: 15px 0px;
     font-weight: bold;
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    font-size: 0.8em;
+}
+footer{
+    background-color: rgba(230,230,230);
+    color:rgb(100,100,100);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #portfolio .container{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    #portfolio .texto{
+        width:70%;
+        max-width: 700px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #portfolio h2{
+        margin-top: 0;
+    }
+
+    #portfolio .img-container{
+        background-image:
+            url('img/portfolio.png');
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            width: 100%;
+            border-radius: 12px;
+    }
+
+    #blog .total_blogs{
+        display: flex;
+        justify-content: center;
+    }
+
+    #blog .p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #blog h3{
+        margin-top: 0;
+        font-size: 1.6em;
+    }
+    #blog .carta{
+        padding: 10px;
+        background-size: 100% 100px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50,50,50,0.7);
+        boz-shadow:2px 2px 10px rgba(0,0,0,0.5);
+    }
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)
+        )
+        ,url('img/Python_vs._R_cropped.png');
+    }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)
+        )
+        ,url('img/laptop_cropped.png');
+    
+    }
+    
+    .carta.carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)
+        )
+        ,url('img/skills_cropped.png');
+    }
+    
 }
